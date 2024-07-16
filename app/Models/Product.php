@@ -32,6 +32,6 @@ class Product extends Model
 
     public function stock()
     {
-        return $this->hasOne(Stock::class, 'product_sku_code', 'sku_code');
+        // return $this->hasOne(Stock::class, 'product_sku_code', 'sku_code');
     }
 }

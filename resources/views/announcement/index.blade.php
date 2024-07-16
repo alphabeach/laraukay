@@ -30,18 +30,21 @@
                 <h4 class="modal-title">Create New Announcement</h4>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+
             <div class="modal-body">
                 <form id="announcementForm" method="#" action="#" enctype="multipart/form-data">
                     <div class="form-group">
                         <label for="title" class="control-label">Title</label>
                         <input type="text" class="form-control" id="title_id" name="title">
                     </div>
+
                     <div class="form-group">
                         <label for="date_of_arrival" class="control-label">Date of Arrival</label>
                         <input type="date" class="form-control" id="date_of_arrival_id" name="date_of_arrival">
                     </div>
                     <div class="form-group">
                         <label for="description" class="control-label">Description</label>
+                        <input type = "hidden" id = "announcementId">
                         <textarea class="form-control" id="description_id" name="description"></textarea>
                     </div>
                     <div class="form-group">
@@ -57,5 +60,6 @@
             </div>
         </div>
     </div>
+   
 </div>
 @endsection

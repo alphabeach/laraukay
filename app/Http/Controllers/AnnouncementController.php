@@ -13,7 +13,7 @@ class AnnouncementController extends Controller
     public function index()
     {
         $announcements = Announcement::orderBy('id', 'DESC')->get();
-        return response()->json($announcements);
+        return response()->json($announcements);    
     }
     
 
